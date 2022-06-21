@@ -1,0 +1,68 @@
+{
+	"pages": [
+		//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/tabbar/china/ChinaNews",
+			"style": {
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/tabbar/global/GlobalNews",
+			"style": {
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/tabbar/local/LocalNews",
+			"style": {
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+            "path" : "pages/tabbar/others/Others/Others"
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		// "navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		// "navigationStyle":"custom", //可以去掉小程序端的顶部导航
+			"app-plus":{
+				"titleNView":false // 去掉APP、H5的顶部导航
+			}
+	},
+	"tabBar": {
+		"borderStyle": "black",
+		"backgroundColor": "#FFFFFF",
+		"color": "#8a8a8a",
+		"selectedColor": "#10aeb5",
+		"list": [
+			{
+				"pagePath": "pages/tabbar/china/ChinaNews",
+				"iconPath": "static/img/tabbar/icon-china.png",
+				"selectedIconPath": "static/img/tabbar/icon-china-active.png",
+				"text": "国内疫情"
+			},
+			{
+				"pagePath": "pages/tabbar/global/GlobalNews",
+				"iconPath": "static/img/tabbar/icon-global.png",
+				"selectedIconPath": "static/img/tabbar/icon-global-active.png",
+				"text": "全球疫情"
+			},
+			{
+				"pagePath": "pages/tabbar/local/LocalNews",
+				"iconPath": "static/img/tabbar/icon-local.png",
+				"selectedIconPath": "static/img/tabbar/icon-local-active.png",
+				"text": "本地疫情"
+			},
+			{
+				"pagePath": "pages/tabbar/others/Others/Others",
+				"iconPath": "static/img/tabbar/icon-others.png",
+				"selectedIconPath": "static/img/tabbar/icon-others-active.png",
+				"text": "其他信息"
+			}
+		]
+	}
+}

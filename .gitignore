@@ -1,0 +1,12 @@
+node_modules/
+unpackage/
+
+npm-debug.log*
+
+
+# Editor directories and files
+.idea
+.vscode
+
+.hbuilderx
+manifest.json
